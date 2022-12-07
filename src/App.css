@@ -1,38 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --mango: orangered;
+    --coffee: #342E37;
+    --greenDark:#1a2305;
+}
+
 .App {
-  text-align: center;
+    min-height: 100vh;
+    background-color:  #0f0f0f;
+    font-family: 'Inconsolata', monospace, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contenedor-calculadora {
+    width: 400px;
+    height: 570px;
+    background-color:rgba(255, 255, 255, 0.9);
+    border: 2px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fila{
+    margin: 4px;
+    display:flex;
+    align-items: center;
+    align-content: center;
 }
