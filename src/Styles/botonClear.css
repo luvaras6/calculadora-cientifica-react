@@ -1,20 +1,15 @@
 .boton-clear {
-    height: 60px;
-    width: 290px;
-    font-family: 'Saira Extra Condensed', sans-serif;
+    width: 50%;
+    padding: 0.5rem;
     font-size: 1.6em;
-    background-color: var(--mango);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: var(--white);
-    border: 2px solid var(--white);
+    background-color: rgb(20, 197, 20);
+    text-align: center;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
-    user-select: none;
+    box-shadow: 1px 1px 3px grey;
 }
 
 .boton-clear:hover {
-    background-color: var(--greenDark);
+    background-color: rgb(23, 139, 23);
 }

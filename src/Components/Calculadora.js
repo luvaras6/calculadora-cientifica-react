@@ -15,9 +15,7 @@ function Calculadora() {
     };
 
     const calcularResultado = () => {
-        //evaluate convierte una cadena de caracteres
-        //en una expresion matematica
-        //si el string no es vacio->evaluate
+        /*evaluate convierte una cadena de caracteres en una expresion matematica si el string no es vacio -> evaluate*/
         try {
             if (input) {
                 if (input.includes("sqrt3")) {

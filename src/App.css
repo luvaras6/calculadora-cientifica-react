@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
 
-:root {
-    --white: #FFFFFF;
-    --mango: orangered;
-    --coffee: #342E37;
-    --greenDark:#1a2305;
-}
-
 .App {
     min-height: 100vh;
-    background-color:  #0f0f0f;
+    background-color:  #232323;
     font-family: 'Inconsolata', monospace, sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -18,15 +11,17 @@
 }
 
 .contenedor-calculadora {
-    width: 400px;
-    height: 570px;
-    background-color:rgba(255, 255, 255, 0.9);
-    border: 2px solid white;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid white;
+    box-shadow: 1px 1px 3px rgb(199, 199, 199);
+    border-radius: 10px;
 }
 
 .fila{
-    margin: 4px;
     display:flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin: 0.5rem;
 }
