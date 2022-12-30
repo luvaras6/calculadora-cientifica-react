@@ -1,1 +1,0 @@
-import "../Styles/footer.module.css"

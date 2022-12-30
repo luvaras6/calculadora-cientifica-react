@@ -11,6 +11,7 @@
 }
 
 .contenedor-calculadora {
+    max-width: 35rem;
     background-color: rgb(230, 230, 230);
     border: 1px solid white;
     box-shadow: 1px 1px 3px rgb(199, 199, 199);

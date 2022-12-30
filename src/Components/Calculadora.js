@@ -7,7 +7,6 @@ import React from 'react';
 
 function Calculadora() {
     const [input, setInput] = useState("");
-    const [memoria, setMemoria] = useState([]);
 
     //input anterior concatenado con el nuevo valor
     const agregarInput = (valor) => {
@@ -32,15 +31,11 @@ function Calculadora() {
                     setInput(evaluate(input));
                 }
             } else {
-                alert("por favor ingrese valores para realizar los cálculos.");
+                alert("Por favor ingrese valores para realizar los cálculos.");
             }
         } catch (error) {
             setInput("Error");
         }
-    };
-
-    const almacenarEnmemoria = () => {
-        setMemoria(memoria.concat(input));
     };
 
     return (
@@ -50,7 +45,7 @@ function Calculadora() {
                 <div className="fila">
                     <Boton manejarClic={agregarInput}>(</Boton>
                     <Boton manejarClic={agregarInput}>)</Boton>
-                    <Boton manejarClic={agregarInput}>!</Boton>
+                    <Boton manejarClic={agregarInput}>x!</Boton>
                     <Boton manejarClic={agregarInput}>^2</Boton>
                     <Boton manejarClic={agregarInput}>^3</Boton>
                     <Boton manejarClic={agregarInput}>^</Boton>
@@ -65,7 +60,6 @@ function Calculadora() {
                     <Boton manejarClic={agregarInput}>log</Boton>
                     <Boton manejarClic={agregarInput}>exp</Boton>
                     <Boton manejarClic={agregarInput}>%</Boton>
-                    <Boton manejarClic={agregarInput}>sqrtn</Boton>
                 </div>
 
                 <div className="fila">
@@ -90,12 +84,11 @@ function Calculadora() {
                 </div>
 
                 <div className="fila">
-                    <Boton manejarClic={almacenarEnmemoria}>MR</Boton>
+                    <Boton>MR</Boton>
                     <Boton manejarClic={calcularResultado}>=</Boton>
                     <BotonClear
                         manejarClear={() => {
                             setInput("");
-                            setMemoria([]);
                         }}
                     />
                 </div>
